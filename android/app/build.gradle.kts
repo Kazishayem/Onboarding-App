@@ -9,10 +9,12 @@ android {
     namespace = "com.example.onboarding_app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
+    
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+        isCoreLibraryDesugaringEnabled = true
     }
 
     kotlinOptions {
@@ -28,6 +30,7 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+
     }
 
     buildTypes {
@@ -41,4 +44,12 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // ✅ Required for core library desugaring (Java 8+ APIs)
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+
+    // Optional — if you use multidex
+    implementation("androidx.multidex:multidex:2.0.1")
 }

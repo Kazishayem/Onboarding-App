@@ -5,29 +5,31 @@ import 'package:onboarding_app/models/onboarding_page_model.dart';
 
 class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
   OnboardingBloc()
-      : super(OnboardingState(
+    : super(
+        OnboardingState(
           currentPage: 0,
           pages: const [
             OnboardingPageModel(
-              image: 'assets/images/nature.jpg',
+              image: 'assets/images/travel3.png',
               title: 'Discover the world, one journey at a time.',
               subtitle:
-                  'From hidden gems to iconic destinations, we make travel simple, inspiring, and unforgettable.',
+                  'From hidden gems to iconic destinations, we make travel simple, inspiring, and unforgettable.Start your next adventure today.',
             ),
             OnboardingPageModel(
-              image: 'assets/images/travel.jpg',
-              title: 'Sync with nature’s rhythm effortlessly.',
+              image: 'assets/images/travel6.png',
+              title: 'Explore new horizons,one step at a time.',
               subtitle:
-                  'Let natural patterns inspire your routines and keep your days balanced and mindful.',
+                  'Every trip holds a story waiting to be lived.Let us guide you to experiences that inspire,connect,and last a lifetime.',
             ),
             OnboardingPageModel(
-              image: 'assets/images/plane.jpg',
-              title: 'Relax, unwind, and let life flow naturally.',
+              image: 'assets/images/travel.png',
+              title: 'See the beauty,one journey at a time.',
               subtitle:
-                  'Stay in tune with the present moment and enjoy a peaceful lifestyle.',
+                  'Travel made simple and exciting-discover places you"ll never forget.',
             ),
           ],
-        )) {
+        ),
+      ) {
     on<OnPageChanged>((event, emit) {
       emit(state.copyWith(currentPage: event.pageIndex));
     });
