@@ -7,12 +7,12 @@ import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 import 'package:onboarding_app/services/alarm_service.dart';
 
-//
+
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
 
 final AlarmService alarmService = AlarmService();
-//
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await alarmService.init();

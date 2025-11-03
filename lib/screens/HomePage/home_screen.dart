@@ -56,11 +56,10 @@ class HomeScreen extends StatelessWidget {
 
                   const SizedBox(height: 80),
 
-                  /// ✅ Center Image
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16),
                     child: Image.asset(
-                      'assets/images/travel4.png', // change path as per your asset
+                      'assets/images/travel4.png',
                       height: 350,
                       width: double.infinity,
                       fit: BoxFit.cover,
@@ -69,7 +68,6 @@ class HomeScreen extends StatelessWidget {
 
                   const SizedBox(height: 100),
 
-                  /// ✅ "Use Current Location" button
                   OutlinedButton.icon(
                     onPressed: () {
                       Navigator.pushReplacementNamed(context, '/dashboard');
@@ -98,7 +96,6 @@ class HomeScreen extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
-                  /// ✅ "Home" button
                   ElevatedButton(
                     onPressed: () {
                       Navigator.pushReplacementNamed(context, '/dashboard');

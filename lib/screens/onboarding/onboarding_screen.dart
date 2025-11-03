@@ -29,7 +29,7 @@ class OnboardingScreen extends StatelessWidget {
               ),
               child: Stack(
                 children: [
-                  /// ✅ PAGEVIEW
+                
                   PageView.builder(
                     controller: _pageController,
                     itemCount: state.pages.length,
@@ -47,11 +47,11 @@ class OnboardingScreen extends StatelessWidget {
                     },
                   ),
 
-                  /// ✅ Overlay UI
+                
                   SafeArea(
                     child: Stack(
                       children: [
-                        /// ✅ Skip Button
+                      
                         Positioned(
                           top: 20,
                           right: 16,
@@ -73,7 +73,7 @@ class OnboardingScreen extends StatelessWidget {
                           ),
                         ),
 
-                        /// ✅ Dots + Next Button
+                      
                         Positioned(
                           bottom: 30,
                           left: 0,
