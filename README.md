@@ -8,6 +8,7 @@ All screenshots are stored in the assets/Screenshots/{images} directory.
 Features
 1. Onboarding Screens
 - 3 onboarding screens following the given design:
+
 •	Sync with nature’s rhythm  
 •	Effortless automatic syncing  
 •	Relax and unwind  
@@ -54,6 +55,10 @@ lib/
  ├─ widgets/
  │   └─ alarm_tile.dart
  └─ main.dart
+
+
+
+ 
 Package	Purpose
 flutter_bloc------State management
 equatable-----Immutable state comparison
